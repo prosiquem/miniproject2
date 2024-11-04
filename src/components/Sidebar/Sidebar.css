@@ -1,0 +1,19 @@
+.Sidebar {
+    width: 120px;
+    height: 570px;
+    display: flex;
+    border: 1px black solid;
+    font-family: sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}

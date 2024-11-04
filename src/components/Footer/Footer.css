@@ -1,0 +1,15 @@
+.Footer {
+    color: green;
+    text-decoration: none;
+    background-color: rgba(74, 74, 74, 0.697);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-family: sans-serif;
+}
+
+.Footer a {
+    text-decoration: none;
+    color: white;
+}

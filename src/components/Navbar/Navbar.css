@@ -1,0 +1,17 @@
+.Navbar img {
+    width: 80px;
+}
+
+.Navbar .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.Navbar {
+    width: 100%;
+    display: block;
+    font-family: sans-serif;
+    border: 1px black solid;
+}
