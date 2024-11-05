@@ -1,19 +1,19 @@
+import reactLogo from './../../assets/react.svg'
+import navicon from './../../assets/navicon.png'
 import './Navbar.css'
 
-function Navbar() {
-
+const Navbar = () => {
     return (
         <div className="Navbar">
-
-            <header className="menu">
-
-                <img src="https://cdn-icons-png.flaticon.com/512/45/45082.png" alt="Atom" />
-
-                <h1>App Minip</h1>
-            </header>
+            <nav>
+                <div className='buttons'>
+                    <img src={navicon} alt="Navicon" className='navicon' />
+                    <h1>App_artments</h1>
+                </div>
+                <img src={reactLogo} alt="Logotipo" className='logo' />
+            </nav>
         </div>
     )
-
 }
 
 export default Navbar

@@ -1,11 +1,10 @@
 import './Footer.css'
 
-function Footer() {
+const Footer = () => {
     return (
-        <div className="Footer">
-
-            <a href="https://github.com/prosiquem/miniproject2"><h3>Link to our repository</h3></a>
-        </div>
+        <footer className="Footer">
+            <p>Todos los derechos reservados</p>
+        </footer>
     )
 }
 

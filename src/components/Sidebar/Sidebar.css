@@ -1,19 +1,19 @@
 .Sidebar {
-    width: 120px;
-    height: 570px;
-    display: flex;
-    border: 1px black solid;
-    font-family: sans-serif;
+    border-right: 1px solid;
+    width: 250px;
+    min-height: 100vh;
 }
 
-ul li {
+.Sidebar ul {
+    padding: 0;
     list-style: none;
 }
 
-ul {
-    align-items: center;
-}
-
-a {
+.Sidebar a {
+    color: black;
     text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
 }

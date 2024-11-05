@@ -1,14 +1,19 @@
 import './Sidebar.css'
 
-function Sidebar() {
-
+const Sidebar = () => {
     return (
         <div className="Sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Apartamentos</a>
+                    </li>
+                    <li>
+                        <a href="/">Otros</a>
+                    </li>
 
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About us</a></li>
-            </ul>
+                </ul>
+            </nav>
         </div>
     )
 }
