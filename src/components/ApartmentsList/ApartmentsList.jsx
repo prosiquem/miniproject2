@@ -1,33 +1,28 @@
+import './ApartmentsList.css'
+import apartmentsData from './../../data/apartments.json'
 import { useState } from 'react'
-import apartmentdata from "./../../data/apartments.json"
-import ApartmentCard from './../ApartmentCard'
+import ApartmentCard from '../ApartmentCard/ApartmentCard'
 
-const ApartmentList = () => {
+const ApartmentsList = () => {
 
-    const [apartments, setApartments] = useState(apartmentdata.results)
+    const [apartments, setApartments] = useState(apartmentsData.results)
 
-    const handleApartmentRemoval = idToDelete => {
-        const filteredApartments = apartments.filter(eachApartment => eachApartment.id != idToDelete)
+    const removeApartment = apartmentId => {
+        const filteredApartments = apartments.filter(elm => elm.id != apartmentId)
         setApartments(filteredApartments)
     }
 
     return (
         <div className="ApartmentsList">
-
-            <h1>Apartment List</h1>
-
             {
-                apartments.map(eachApartment => {
-                    return (<ApartmentCard
-                        key={eachApartment.id}
-                        deleteApartment={handleApartmentRemoval}
-                        {...eachApartment} />
+                apartments.map(elm => {
+                    return (
+                        <ApartmentCard {...elm} removeApartment={removeApartment} key={elm.id} />
                     )
                 })
             }
-
         </div>
     )
 }
 
-export default ApartmentList
+export default ApartmentsList

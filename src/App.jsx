@@ -1,9 +1,11 @@
 import './App.css'
-import ApartmentList from './components/ApartmentsList/ApartmentsList.jsx'
+
+
+
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Sidebar from './components/Sidebar/Sidebar'
-
+import AppRoutes from './routes/AppRoutes.jsx'
 
 function App() {
 
@@ -16,10 +18,9 @@ function App() {
       <div className="viewport-content">
 
         <Sidebar />
-
-        <ApartmentList />
-
+        <AppRoutes />
       </div>
+
       <Footer />
 
     </div>
