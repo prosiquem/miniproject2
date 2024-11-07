@@ -1,26 +1,22 @@
 import { Route, Routes } from "react-router-dom"
-import Dashboard from "../pages/Dashboard.jsx"
-import About from "../pages/About.jsx"
-import NotFound from "../pages/notFound.jsx"
-import ApartmenDetails from "../pages/ApartmentDetails.jsx"
+import DashboardPage from "../pages/DashboardPage/DashboardPage"
+import AboutPage from "../pages/AboutPage/AboutPage"
+import NotFoundPage from "../pages/NotFoundPage/NotFoundPage"
+import ApartmentDetailsPage from "../pages/ApartmentDetailsPage/ApartmentDetailsPage"
 
+const AppRoutes = () => {
 
-
-function AppRoutes() {
     return (
 
-        <Routes>
+        <div className="AppRoutes">
 
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/ApartmentDetails/:ApartmentId" element={<ApartmenDetails />} />
-
-
-            <Route path="*" element={<NotFound />} />
-
-
-
-        </Routes>
+            <Routes>
+                <Route path="/" element={<DashboardPage />} />
+                <Route path="/sobre-mi" element={<AboutPage />} />
+                <Route path="/detalles/:apartmentId" element={<ApartmentDetailsPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+        </div>
     )
 }
 
